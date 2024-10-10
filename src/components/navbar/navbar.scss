@@ -1,0 +1,57 @@
+
+
+.navbar{
+    height: 100px;
+
+    .wrapper{
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+
+        span{
+            font-weight: bold;
+
+        }
+
+        .social{
+            display: flex;
+            gap: 50px;
+            height: 50px;
+            width: 50px;
+        }  
+
+        a:hover{
+            background-color: (#615e5e3d); //**SVG images to fill icon on hover
+            border-radius: 100%;
+            transition: all 0.3s ease 0.05s;
+                transform: scale(1.1);
+            
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

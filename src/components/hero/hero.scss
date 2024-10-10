@@ -1,0 +1,60 @@
+@import "../../app.scss"; 
+
+.hero {
+  position: relative;
+  height: calc(100vh - 100px); // Set height to viewport height minus 100px for NavBar
+  overflow: hidden;
+  background: linear-gradient(180deg, white, #0c0c1d); 
+
+  .wrapper {
+    margin: auto; // Center the content horizontally
+    height: 100%; // Full height to fill the hero section
+    max-width: 1366px; // Max width for content
+
+    .textContainer {
+      height: 100%;
+      gap: 40px; 
+      width: 50%; // Text container takes up half the width
+      display: flex;
+      flex-direction: column; // Stack elements vertically
+      justify-content: center; // Center elements vertically
+
+      h2 {
+        letter-spacing: 10px; // Space between characters
+        color: rgb(0, 0, 0); 
+        font-size: 30px;
+      }
+
+      h1 {
+        font-size: 88px; 
+      }
+
+      .buttons {
+        button {
+          background-color: transparent; 
+          padding: 20px; 
+          cursor: pointer; 
+          color: white; 
+          font-weight: 300; 
+          margin-right: 20px; // Space between buttons
+          border-radius: 10px; // Rounded corners for buttons
+          border: 1px solid white; // White border around buttons
+        }
+      }
+
+      img {
+        width: 50px; 
+      }
+    }
+  }
+
+  .slidingTextContainer {
+    font-weight: bold; // Bold font weight for sliding text
+    width: 50%; 
+    font-size: 50vh; // Large text size, relative to viewport height
+    bottom: -120px; // Position below the visible area
+    position: absolute;
+    white-space: nowrap; // Prevent text from wrapping
+    color: #ffffff09; 
+  }
+}
